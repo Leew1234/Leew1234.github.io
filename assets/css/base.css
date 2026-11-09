@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin: 0 0 var(--space-1);
+}
+
+h1 {
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 6vw, 3.25rem);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0 0 var(--space-2);
+}
+
+:focus-visible {
+  outline: 3px solid var(--maize);
+  outline-offset: 2px;
+}
+
+.light :focus-visible,
+.panel :focus-visible {
+  outline-color: var(--blue);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

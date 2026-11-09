@@ -1,0 +1,6 @@
+PLAN.md
+.DS_Store
+# Unapproved entries and demos. Never publish.
+drafts/
+# Contains a phone number. Remove this line only after replacing it with a scrubbed copy.
+resume/*.pdf

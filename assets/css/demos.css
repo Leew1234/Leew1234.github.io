@@ -1,0 +1,239 @@
+.demo-slot:not(:empty) {
+  margin-top: var(--space-3);
+}
+
+.demo {
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  background: var(--blue-deep);
+  color: var(--white);
+}
+
+.demo :focus-visible {
+  outline-color: var(--maize);
+}
+
+.demo-note {
+  color: var(--maize);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.demo-caption {
+  margin: var(--space-1) 0;
+  font-size: 0.85rem;
+}
+
+.demo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.demo-button {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--white);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--white);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.demo-button[aria-pressed="true"] {
+  border-color: var(--maize);
+  background: var(--maize);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.demo-sliders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: var(--space-1) var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.demo-sliders label {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 0.9rem;
+}
+
+.demo-sliders output {
+  font-family: var(--font-mono);
+}
+
+.demo-sliders input {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0.25rem 0 0;
+  accent-color: var(--maize);
+}
+
+.demo-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.demo-stats div {
+  padding: var(--space-1);
+  background: var(--blue-2);
+  text-align: center;
+}
+
+.demo-stats span {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.demo-stats strong {
+  color: var(--maize);
+  font-family: var(--font-mono);
+}
+
+.demo-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0 var(--space-1);
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.demo-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.swatch {
+  width: 22px;
+  border-top: 2px solid var(--white);
+}
+
+.swatch-line {
+  border-top-color: var(--maize);
+}
+
+.swatch-dash {
+  border-top-style: dashed;
+}
+
+.demo-chart {
+  position: relative;
+}
+
+.demo-chart canvas {
+  display: block;
+  width: 100%;
+  height: 256px;
+  touch-action: pan-y;
+}
+
+.demo-tooltip {
+  position: absolute;
+  top: 0;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--ink);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.demo-table summary {
+  margin-top: var(--space-1);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.demo-table table {
+  width: 100%;
+  margin-top: var(--space-1);
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.demo-table th,
+.demo-table td {
+  padding: 0.15rem 0.3rem;
+  border-bottom: 1px solid var(--blue-2);
+}
+
+.dna-strip {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  padding: 4px;
+}
+
+.dna-base {
+  flex: 0 0 1.8rem;
+  padding-top: 0.2rem;
+  border-radius: 3px;
+  background: var(--blue-2);
+  font-family: var(--font-mono);
+  text-align: center;
+  cursor: pointer;
+}
+
+.dna-base[aria-selected="true"] {
+  background: var(--maize);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.dna-lane {
+  display: flex;
+  align-items: flex-end;
+  height: 28px;
+  padding: 0 4px;
+}
+
+.dna-meter {
+  width: 100%;
+  background: var(--maize);
+}
+
+.dna-base[aria-selected="true"] .dna-meter {
+  background: var(--blue);
+}
+
+.dna-position {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.dna-bar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2rem var(--space-1);
+  margin-bottom: var(--space-1);
+  font-size: 0.9rem;
+}
+
+.dna-bar strong {
+  font-family: var(--font-mono);
+}
+
+.dna-track {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  height: 12px;
+  background: var(--blue-2);
+}
+
+.dna-fill {
+  height: 100%;
+  background: var(--maize);
+}

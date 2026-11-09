@@ -1,0 +1,21 @@
+:root {
+  --blue: #00274c;
+  --maize: #ffcb05;
+  --blue-2: #0b3a66;
+  --blue-deep: #001a33;
+  --paper: #f7f5ef;
+  --ink: #10202f;
+  --white: #ffffff;
+
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --wrap: 68rem;
+  --radius: 6px;
+}

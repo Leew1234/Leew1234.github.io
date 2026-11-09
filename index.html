@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wyatt Lee</title>
+    <meta name="description" content="Projects and CV of Wyatt Lee, a computer science student at the University of Michigan." />
+    <meta name="theme-color" content="#00274C" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wyatt Lee" />
+    <meta property="og:description" content="Projects and CV of Wyatt Lee, a computer science student at the University of Michigan." />
+    <meta property="og:url" content="https://leew1234.github.io/" />
+    <link rel="canonical" href="https://leew1234.github.io/" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/demos.css" />
+    <script type="module" src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home" aria-label="Wyatt Lee, home">WL</a>
+        <nav aria-label="Main">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section dark hero">
+        <div class="wrap hero-grid">
+          <div>
+            <h1 id="hero-name"></h1>
+            <p id="hero-intro" class="lede"></p>
+            <div id="hero-actions" class="actions"></div>
+          </div>
+          <div class="scoreboard">
+            <div class="scoreboard-head">
+              <p class="scoreboard-label">Now playing</p>
+              <span id="scoreboard-controls"></span>
+            </div>
+            <p id="hero-role" class="scoreboard-text"></p>
+            <dl id="hero-stats" class="stats"></dl>
+          </div>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path class="wave-fill" d="M0 44 C240 92 480 4 720 36 S1200 84 1440 28 V80 H0 Z" />
+          <path class="wave-line" d="M0 44 C240 92 480 4 720 36 S1200 84 1440 28" />
+        </svg>
+      </section>
+
+      <section id="projects" class="section light">
+        <div class="wrap">
+          <p class="section-label" aria-hidden="true">1st &amp; 10</p>
+          <h2>Projects</h2>
+          <div id="project-filters" class="filters" role="group" aria-label="Filter projects"></div>
+          <p id="project-status" class="filter-status" role="status"></p>
+          <div id="project-list" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="experience" class="section dark">
+        <div class="wrap">
+          <p class="section-label" aria-hidden="true">2nd &amp; 7</p>
+          <h2>Experience</h2>
+          <div id="experience-filters" class="filters" role="group" aria-label="Filter experience"></div>
+          <p id="experience-status" class="filter-status" role="status"></p>
+          <ol id="experience-list" class="timeline"></ol>
+          <div class="extras">
+            <div>
+              <h2 class="subheading">Honors</h2>
+              <ul id="honors-list"></ul>
+            </div>
+            <div>
+              <h2 class="subheading">Skills</h2>
+              <dl id="skills-list"></dl>
+            </div>
+          </div>
+          <div id="resume-link" class="actions"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section light">
+        <div class="wrap">
+          <p class="section-label" aria-hidden="true">3rd &amp; 3</p>
+          <h2>About</h2>
+          <div id="about-text" class="about-text"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section dark">
+        <div class="wrap">
+          <p class="section-label" aria-hidden="true">4th &amp; Goal</p>
+          <h2>Contact</h2>
+          <ul id="contact-list" class="contact-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="project-panel" class="panel" aria-labelledby="panel-title">
+      <div class="panel-inner">
+        <button type="button" class="panel-close">Close</button>
+        <div id="panel-content"></div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p id="footer-text"></p>
+    </footer>
+  </body>
+</html>
